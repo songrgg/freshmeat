@@ -20,6 +20,7 @@ import javax.validation.Payload;
 public @interface TextLength {
   /**
    * The error message when validation failed.
+   * @return the warning message when invalidated.
    */
   String message() default "TEXT_LENGTH_INCORRECT";
 
@@ -27,11 +28,13 @@ public @interface TextLength {
 
   /**
    * The min word length of the given text.
+   * @return the min word length.
    */
   int min() default 0;
 
   /**
    * The max word length of the given text.
+   * @return the max word length.
    */
   int max() default Integer.MAX_VALUE;
 

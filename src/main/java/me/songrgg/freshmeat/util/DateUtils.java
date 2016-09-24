@@ -12,6 +12,7 @@ import java.time.LocalTime;
 public class DateUtils {
   /**
    * Get current timestamp.
+   * @return the current unix timestamp.
    */
   public static int nowTime() {
     return (int) (System.currentTimeMillis() / 1000);
@@ -19,6 +20,7 @@ public class DateUtils {
 
   /**
    * Get yesterday's midnight timestamp.
+   * @return the yesterday midnight unix timestamp.
    */
   public static int yesterdayMidnight() {
     LocalTime midnight = LocalTime.MIDNIGHT;
@@ -29,6 +31,7 @@ public class DateUtils {
 
   /**
    * Get today's midnight timestamp.
+   * @return today midnight unix timestamp.
    */
   public static int todayMidnight() {
     LocalTime midnight = LocalTime.MIDNIGHT;
