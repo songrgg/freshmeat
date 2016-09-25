@@ -38,7 +38,7 @@
 		"errors": [
 			{
 				"message": "USER_NOT_LOGIN",
-				"message_human": "USER_NOT_LOGIN"
+				"message_human": "请您先登录"
 			}
 		]
 	}
